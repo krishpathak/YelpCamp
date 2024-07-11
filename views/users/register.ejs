@@ -1,0 +1,28 @@
+<% layout('layout/boilerplate') %>
+    <div class=" container d-flex flex-row justify-content-center align-item-center mb-3" style="max-width: 900px;">
+        <div class="row justify-content-center">
+            <div class="w-50">
+                <div class="card shadow">
+                    <img src="https://traveltriangle.com/blog/wp-content/uploads/2016/12/shutterstock_190886390.jpg" alt="Forest Path" class="card-img-top" />
+                    <h1 class="mx-4 text-center">Register</h1>
+                    <form action="/register" method="POST" class="validated-form" novalidate>
+                        <div class="mx-4">
+                            <label class="form-label" for="email">Email:</label>
+                            <input class="form-control" type="text" id="email" name="email" required>
+                        </div>
+                        <div class="mx-4">
+                            <label class="form-label" for="username">Username:</label>
+                            <input class="form-control" type="text" id="username" name="username" required>
+                        </div>
+                        <div class="mx-4">
+                            <label class="form-label" for="password">Password:</label>
+                            <input class="form-control" type="password" id="password" name="password" required>
+                        </div>
+                        <div class="mx-4">
+                        <button class="btn btn-success mt-3 mb-3 w-100">Register</button>
+                    </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
